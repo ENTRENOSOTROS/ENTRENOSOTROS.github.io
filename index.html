@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="es">
 <head>
@@ -33,5 +34,225 @@
   <footer role="contentinfo">
     <p>© Entre Nosotros</p>
   </footer>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Entre Nosotros</title>
+
+        <!-- Fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/logo.png" type="image/png">
+        <link rel="alternate icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+
+<nav class="nav">
+    <div class="container nav-inner">
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="Logo Entre Nosotros" class="logo-img">
+            <span class="logo-text">Entre Nosotros</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#muro">Muro</a></li>
+            <li><a href="#arte">Arte</a></li>
+            <li><a href="#cartas">Cartas</a></li>
+            <li><a href="#diario">Diario</a></li>
+            <li><a href="#jardin">Jardín</a></li>
+            <li><a href="#blog">Blog</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="btn ghost theme-toggle" id="themeToggle" type="button" aria-label="Cambiar modo oscuro">🌙</button>
+            <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-left">
+                <h1>ENTRE<br>NOSOTROS</h1>
+                <p class="hero-sub">no estás solo, aquí te entendemos.</p>
+                <p class="hero-desc">Un espacio seguro para hablar, escuchar y acompañarnos en el camino hacia el bienestar emocional.</p>
+                <div class="cta-row">
+                    <button class="btn primary" id="openModal">Tu bienestar importa</button>
+                    <a class="btn ghost" href="#muro">Ver muro</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-illustration">
+                    <img src="img/ilustracion.jpeg" alt="Ilustración decorativa Entre Nosotros" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features container" aria-label="Características">
+        <div class="feature">
+            <div class="icon">🌿</div>
+            <h3>Bienestar emocional</h3>
+            <p>Herramientas para cuidar tu mente y corazón.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">🤝</div>
+            <h3>Comunidad</h3>
+            <p>Un lugar para compartir, escuchar y sentirte acompañado.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">📚</div>
+            <h3>Recursos</h3>
+            <p>Artículos, guías y recomendaciones para tu crecimiento personal.</p>
+        </div>
+        <div class="feature">
+            <div class="icon">💬</div>
+            <h3>Apoyo profesional</h3>
+            <p>Información y orientación para cuando más lo necesites.</p>
+        </div>
+    </section>
+
+    <section class="blog container" id="blog">
+        <div class="blog-header">
+            <p class="eyebrow">Blog</p>
+            <h2>Frases para acompañar tu salud mental</h2>
+            <p>Encuentra pequeñas palabras de apoyo y ganas un impulso para tu bienestar.</p>
+        </div>
+        <div class="blog-grid">
+            <article class="blog-card">
+                <p>Respira profundamente durante un minuto cada vez que te sientas abrumado. Eso ayuda a tu cuerpo y mente a calmarse.</p>
+            </article>
+            <article class="blog-card">
+                <p>Permítete descansar hoy sin culpas. El cuidado personal también es parte de tu crecimiento.</p>
+            </article>
+            <article class="blog-card">
+                <p>Escribe una cosa buena que hayas hecho o sentido hoy. Recordar lo positivo fortalece tu bienestar.</p>
+            </article>
+            <article class="blog-card">
+                <p>Habla con alguien de confianza o comparte tu experiencia en el foro anónimo cuando necesites desahogarte.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="art container" id="arte">
+        <div class="blog-header">
+            <p class="eyebrow">Arte</p>
+            <h2>Comparte imágenes que te ayudan a expresarte</h2>
+            <p>Sube tus dibujos, fotos o ilustraciones para inspirar a la comunidad. Todo se guarda de forma anónima en tu navegador.</p>
+        </div>
+        <div class="art-panel">
+            <div class="art-upload">
+                <label for="artFiles">Selecciona imágenes</label>
+                <input type="file" id="artFiles" accept="image/*" multiple>
+                <textarea id="artCaption" placeholder="Escribe una breve idea o sentimiento opcional..." rows="3"></textarea>
+                <button class="btn primary" id="saveArtBtn" type="button">Compartir arte</button>
+                <p class="contact-note">Las imágenes se guardan localmente en tu navegador para que puedas verlas aquí.</p>
+            </div>
+            <div class="art-gallery" id="artGallery">
+                <p class="comment-empty">Comparte tu primer arte para inspirar a otros.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="wall container" id="muro">
+        <div class="contact-card">
+            <div>
+                <p class="eyebrow">Muro de publicaciones</p>
+                <h2>Comparte y recibe abrazos virtuales</h2>
+                <p>Publica mensajes anónimos, apoya a otros con reacciones y mantén la conexión con la comunidad.</p>
+            </div>
+            <div class="contact-actions">
+                <button class="btn primary" id="openModal2">Publicar comentario</button>
+                <span class="pill">Abrazos virtuales: 🤍</span>
+            </div>
+            <p class="contact-note">Cada usuario usa un avatar anónimo persistente para reconocerse sin revelar su identidad.</p>
+            <div class="forum-list" id="commentsList">
+                <p class="empty-comments">Sé el primero en dejar un abrazo virtual.</p>
+            </div>
+        </div>
+    </section>
+
+    <section     git init
+    git add .
+    git commit -m "Publicar sitio estático Entre Nosotros"
+    git branch -M main
+    git remote add origin https://github.com/TU_USUARIO/NOMBRE_REPO.git
+    git push -u origin main    cd "C:\Users\ja121\OneDrive\Desktop\ENTRENOSOTROS"class="letters container" id="cartas">
+        <div class="blog-header">
+            <p class="eyebrow">Cartas anónimas</p>
+            <h2>Escribe una carta para quien la necesite</h2>
+            <p>Deja una palabra amable o un mensaje de apoyo sin necesidad de apellidos.</p>
+        </div>
+        <div class="letters-panel">
+            <textarea id="letterText" placeholder="Escribe tu carta aquí..." rows="4"></textarea>
+            <button class="btn primary" id="saveLetterBtn" type="button">Guardar carta</button>
+            <div class="letter-list" id="letterList">
+                <p class="comment-empty">Aún no hay cartas compartidas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="diary container" id="diario">
+        <div class="blog-header">
+            <p class="eyebrow">Diario privado</p>
+            <h2>Tu espacio personal</h2>
+            <p>Escribe lo que quieras y vuelve a leerlo cuando quieras. Solo tú lo verás en este navegador.</p>
+        </div>
+        <div class="diary-panel">
+            <textarea id="diaryText" placeholder="Escribe tu diario aquí..." rows="8"></textarea>
+            <button class="btn primary" id="saveDiaryBtn" type="button">Guardar diario</button>
+            <p class="contact-note">Tu diario se guarda en tu navegador y nadie más puede verlo aquí.</p>
+        </div>
+    </section>
+
+    <section class="garden container" id="jardin">
+        <div class="blog-header">
+            <p class="eyebrow">Jardín de Esperanza</p>
+            <h2>Un pequeño jardín para tus ánimos</h2>
+            <p>Cada comentario y carta hace crecer tu jardín. Riega tus plantas con interacciones.</p>
+        </div>
+        <div class="garden-panel">
+            <div class="garden-metrics">
+                <div><strong id="gardenScore">0</strong><span>Esperanzas sembradas</span></div>
+                <div><strong id="gardenLevel">Brote</strong><span>Nivel actual</span></div>
+            </div>
+            <div class="garden-grid" id="gardenGrid">
+                <div class="garden-card">🌱</div>
+                <div class="garden-card">🌿</div>
+                <div class="garden-card">🌸</div>
+                <div class="garden-card">🌼</div>
+            </div>
+            <button class="btn ghost" id="waterGardenBtn" type="button">Regar jardín</button>
+        </div>
+    </section>
+</main>
+
+<!-- Modal simple -->
+<div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="modal-close" id="closeModal" aria-label="Cerrar">×</button>
+        <h2>Escribe de forma anónima</h2>
+        <textarea id="anonText" placeholder="Escribe aquí lo que quieras decir..."></textarea>
+        <div class="modal-actions">
+            <button class="btn primary" id="sendBtn">Enviar (simulado)</button>
+            <button class="btn ghost" id="cancelBtn">Cancelar</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+>>>>>>> ad5a9d8 (Publish site)
 </body>
 </html>
