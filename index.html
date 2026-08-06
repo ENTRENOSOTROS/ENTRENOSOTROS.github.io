@@ -11,6 +11,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="img/logo.png" type="image/png">
   <link rel="alternate icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <!-- Google Analytics (GA4) - reemplaza G-XXXXXXX por tu Measurement ID -->
+  <!-- Si prefieres otra herramienta (Plausible/Umami/Matomo) dímelo y adapto el snippet -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
 </head>
 <body>
   <nav class="nav">
@@ -133,7 +144,18 @@
         </div>
         <p class="contact-note">Cada usuario usa un avatar anónimo persistente para reconocerse sin revelar su identidad.</p>
         <div class="forum-list" id="commentsList">
-          <p class="empty-comments">Sé el primero en dejar un abrazo virtual.</p>
+          <!-- Integración de utterances: los comentarios se guardarán como Issues en este repositorio -->
+          <!-- IMPORTANTE: habilita 'Issues' en el repositorio (Settings → Features → Issues) para que esto funcione -->
+          <div id="utterances-container">
+            <script src="https://utteranc.es/client.js"
+                    repo="ENTRENOSOTROS/ENTRENOSOTROS.github.io"
+                    issue-term="pathname"
+                    label="comentario"
+                    theme="github-light"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+          </div>
         </div>
       </div>
     </section>
